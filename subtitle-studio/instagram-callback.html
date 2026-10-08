@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>videoEditingStudio · Instagram</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<h1>Instagram 연결</h1>
+<p id="note">자막 스튜디오로 돌아가는 중입니다…</p>
+<p class="muted">This page hands the Instagram sign-in result to the videoEditingStudio app running on your own PC (localhost). Nothing is stored or sent anywhere else.</p>
+<script>
+(function () {
+  var query = window.location.search;
+  if (!/[?&](code|error)=/.test(query) || !/[?&]state=/.test(query)) {
+    document.getElementById('note').textContent = '연결 정보가 없습니다. 자막 스튜디오에서 다시 연결해 주세요.';
+    return;
+  }
+  window.location.replace('http://localhost:51947/callback/' + query);
+})();
+</script>
+</main></body></html>
