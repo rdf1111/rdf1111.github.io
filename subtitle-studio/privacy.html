@@ -3,11 +3,11 @@
 <title>Privacy Policy — videoEditingStudio</title><link rel="stylesheet" href="/style.css"></head>
 <body><main>
 <h1>Privacy Policy</h1>
-<p class="muted">videoEditingStudio (자막 스튜디오) · Effective 6 October 2026</p>
+<p class="muted">videoEditingStudio (자막 스튜디오) · Effective 8 October 2026</p>
 <nav><a href="/subtitle-studio/">Home</a><a href="/subtitle-studio/terms.html">Terms of Use</a></nav>
 
 <h2>Summary</h2>
-<p>videoEditingStudio is a desktop app that runs on your own Windows PC. We, the developer, do not operate a server for it and do not receive your videos, your Google or TikTok account information, or your YouTube or TikTok data. What the app keeps, it keeps on your PC.</p>
+<p>videoEditingStudio is a desktop app that runs on your own Windows PC. We, the developer, do not operate a server for it and do not receive your videos, your Google, TikTok, Facebook or Instagram account information, or your YouTube, TikTok or Instagram data. What the app keeps, it keeps on your PC.</p>
 
 <h2>YouTube API Services</h2>
 <p>The upload feature of the app uses YouTube API Services. By using it you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. How Google handles your information is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
@@ -15,22 +15,26 @@
 <h2>TikTok</h2>
 <p>The TikTok publish feature uses the TikTok Content Posting API through TikTok Login Kit. By using it you also agree to the <a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a>; how TikTok handles your information is described in the <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>. The app asks TikTok for two permissions: your basic profile (user.info.basic: display name and avatar) and posting videos (video.publish). Until the app has passed the TikTok audit, TikTok keeps every video posted through it private; the app reports that status as it is.</p>
 
+<h2>Instagram (Meta)</h2>
+<p>The Instagram publish feature uses the Instagram Graph API (content publishing) through Facebook Login. By using it you also agree to the <a href="https://help.instagram.com/581066165581870">Instagram Terms of Use</a> and the Meta Platform Terms; how Meta handles your information is described in the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>. The app asks for these permissions: <code>instagram_basic</code> (the ID, username and name of your Instagram professional account), <code>instagram_content_publish</code> (posting the video you selected as a Reel), <code>pages_show_list</code> and <code>pages_read_engagement</code> (finding the Facebook Page your Instagram account is linked to) and <code>business_management</code> (needed when that Page is managed in a business portfolio). Instagram has no private posts through this API, so a video posted through the app is public as soon as it is published.</p>
+
 <h2>What the app accesses, and what it stores</h2>
 <table>
 <tr><th>Information</th><th>When</th><th>Where it is kept</th></tr>
 <tr><td>The ID and name of your YouTube channel</td><td>When you connect a channel, and each time the app checks that the connection still works</td><td>On your PC, inside the encrypted connection file described below</td></tr>
 <tr><td>Google sign-in tokens (access token and refresh token) for the two permissions you granted</td><td>When you connect a channel</td><td>On your PC, in a file encrypted with Windows Data Protection (DPAPI) for your Windows user account</td></tr>
 <tr><td>The open ID, display name and username of your TikTok account, and the TikTok access and refresh tokens for the two permissions you granted</td><td>When you connect a TikTok account, and each time the app checks or refreshes that connection</td><td>On your PC, in the same kind of DPAPI-encrypted connection file</td></tr>
-<tr><td>The video file you chose, and the title, description, tags, category, visibility, audience ("made for kids") setting, subscriber-notification setting and schedule you entered</td><td>When you press publish</td><td>Sent from your PC directly to YouTube or TikTok (TikTok receives the video, the caption built from your title, description and tags, the privacy level and the AI-generated flag; it has no schedule, category or audience setting). The app keeps your draft text on your PC so you can reuse it</td></tr>
+<tr><td>The ID, username and name of your Instagram professional account, the ID of the Facebook Page it is linked to, and the Facebook Page access token and long-lived user access token for the permissions you granted</td><td>When you connect an Instagram account, and each time the app checks that connection</td><td>On your PC, in the same kind of DPAPI-encrypted connection file</td></tr>
+<tr><td>The video file you chose, and the title, description, tags, category, visibility, audience ("made for kids") setting, subscriber-notification setting and schedule you entered</td><td>When you press publish</td><td>Sent from your PC directly to YouTube, TikTok or Instagram (Instagram receives the video, the caption built from your title, description and tags, the cover frame time and the AI-generated flag; TikTok receives the video, the caption built from your title, description and tags, the privacy level and the AI-generated flag; it has no schedule, category or audience setting). The app keeps your draft text on your PC so you can reuse it</td></tr>
 <tr><td>The video or publish ID, link, visibility and processing status of videos you uploaded with the app</td><td>After an upload, and when you press "check publish status"</td><td>On your PC, in a publish record next to your exported video</td></tr>
 </table>
-<p>The app never sees or stores your Google or TikTok password. You sign in on the Google or TikTok sign-in page in your own browser.</p>
+<p>The app never sees or stores your Google, TikTok or Facebook password. You sign in on the Google, TikTok or Facebook sign-in page in your own browser.</p>
 <p>The app does not read your other videos, comments, subscribers, watch history or analytics.</p>
 
 <h2>How the information is used and shared</h2>
 <ul>
 <li>It is used only to show you which channel is connected, to upload the video you chose, and to show you the result.</li>
-<li>It is sent only between your PC and Google, or your PC and TikTok. It is not sent to the developer, and it is not sold, shared with, or transferred to any other party.</li>
+<li>It is sent only between your PC and Google, your PC and TikTok, or your PC and Meta (Facebook/Instagram). It is not sent to the developer, and it is not sold, shared with, or transferred to any other party.</li>
 <li>It is not used for advertising, profiling or training AI models.</li>
 </ul>
 
@@ -42,8 +46,9 @@
 
 <h2>Deleting your data and revoking access</h2>
 <ul>
-<li>In the app, open <strong>채널 연동</strong> (Channel connections) and press <strong>연동 해제</strong> (Disconnect) on the channel. The app asks Google or TikTok to revoke its token and deletes the encrypted connection file from your PC.</li>
+<li>In the app, open <strong>채널 연동</strong> (Channel connections) and press <strong>연동 해제</strong> (Disconnect) on the channel. The app asks Google, TikTok or Meta to revoke its access and deletes the encrypted connection file from your PC.</li>
 <li>For TikTok you can also remove the app under <strong>Settings and privacy → Security → Manage app permissions</strong> in the TikTok app.</li>
+<li>For Instagram you can also remove the app on Facebook under <strong>Settings &amp; privacy → Settings → Business integrations</strong>, or in Instagram under <strong>Settings → Website permissions → Apps and websites</strong>. To ask the developer to delete data, email <a href="mailto:rdf1111@gmail.com">rdf1111@gmail.com</a>; because the developer holds no server copy, the answer will confirm that nothing is stored outside your PC and explain how to delete the local files.</li>
 <li>You can also revoke the access of the app at any time on the Google security settings page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
 <li>Publish records and drafts are ordinary files in your export folder and can be deleted there. Uninstalling the app and deleting its data folder removes everything it stored.</li>
 </ul>
@@ -53,13 +58,13 @@
 <p>The app is a tool for video creators and is not directed at children.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the new version will be posted on this page with a new effective date, and the app will ask you to agree again before you use the YouTube or TikTok features.</p>
+<p>If this policy changes, the new version will be posted on this page with a new effective date, and the app will ask you to agree again before you use the YouTube, TikTok or Instagram features.</p>
 
 <h2>Contact</h2>
 <p>Questions or complaints about privacy: <a href="mailto:rdf1111@gmail.com">rdf1111@gmail.com</a></p>
 
 <h2>한국어 요약</h2>
-<p>자막 스튜디오(videoEditingStudio)는 내 PC에서만 돌아가는 프로그램이며 개발자 서버가 없습니다. YouTube 업로드 기능은 YouTube API 서비스를, TikTok 게시 기능은 TikTok Content Posting API를 사용합니다. 프로그램은 연결한 채널·계정의 ID·이름과 Google·TikTok 인증 토큰을 Windows 암호화(DPAPI)로 내 PC에만 저장하고, 게시 버튼을 눌렀을 때 선택한 영상과 입력한 제목·설명·태그·공개 범위 등을 YouTube 또는 TikTok으로 직접 보냅니다. TikTok 앱 심사 전에는 TikTok이 올린 영상을 비공개로 둡니다. 이 정보는 개발자나 제3자에게 전달되지 않으며 광고·추적에 쓰이지 않습니다. 채널 연동 화면의 [연동 해제]를 누르면 Google 또는 TikTok에 토큰 철회를 요청하고 저장된 연결 정보를 삭제합니다. <a href="https://security.google.com/settings/security/permissions">Google 보안 설정</a>에서도, TikTok 앱의 [설정 및 개인정보 → 보안 → 앱 권한 관리]에서도 언제든 권한을 철회할 수 있습니다. TikTok의 정보 처리는 <a href="https://www.tiktok.com/legal/privacy-policy">TikTok 개인정보처리방침</a>을, Google의 정보 처리는 <a href="http://www.google.com/policies/privacy">Google 개인정보처리방침</a>을 따릅니다. 문의: rdf1111@gmail.com</p>
+<p>자막 스튜디오(videoEditingStudio)는 내 PC에서만 돌아가는 프로그램이며 개발자 서버가 없습니다. YouTube 업로드 기능은 YouTube API 서비스를, TikTok 게시 기능은 TikTok Content Posting API를, Instagram 게시 기능은 페이스북 로그인으로 Instagram Graph API를 사용합니다. 프로그램은 연결한 채널·계정의 ID·이름과 Google·TikTok·Meta 인증 토큰을 Windows 암호화(DPAPI)로 내 PC에만 저장하고, 게시 버튼을 눌렀을 때 선택한 영상과 입력한 제목·설명·태그·공개 범위 등을 YouTube·TikTok·Instagram으로 직접 보냅니다. TikTok 앱 심사 전에는 TikTok이 올린 영상을 비공개로 둡니다. Instagram은 비공개 게시가 없어 올리면 바로 공개됩니다. 이 정보는 개발자나 제3자에게 전달되지 않으며 광고·추적에 쓰이지 않습니다. 채널 연동 화면의 [연동 해제]를 누르면 Google·TikTok·Meta에 권한 철회를 요청하고 저장된 연결 정보를 삭제합니다. <a href="https://security.google.com/settings/security/permissions">Google 보안 설정</a>에서도, TikTok 앱의 [설정 및 개인정보 → 보안 → 앱 권한 관리]에서도, 페이스북 [설정 → 비즈니스 통합]에서도 언제든 권한을 철회할 수 있습니다. TikTok의 정보 처리는 <a href="https://www.tiktok.com/legal/privacy-policy">TikTok 개인정보처리방침</a>을, Google의 정보 처리는 <a href="http://www.google.com/policies/privacy">Google 개인정보처리방침</a>을 따릅니다. 문의: rdf1111@gmail.com</p>
 
 <footer>videoEditingStudio · <a href="/subtitle-studio/">Home</a> · <a href="/subtitle-studio/terms.html">Terms of Use</a></footer>
 </main></body></html>
