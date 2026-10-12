@@ -1,48 +1,66 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>videoEditingStudio (자막 스튜디오)</title>
-<meta name="description" content="videoEditingStudio is a Windows desktop app that subtitles and edits short videos on your own PC and uploads them to your own YouTube channel.">
-<link rel="stylesheet" href="/style.css"></head>
+<meta name="description" content="videoEditingStudio is a free Windows desktop app that subtitles and edits short videos on your own PC and publishes them to your own YouTube channel, TikTok account or Instagram professional account.">
+<link rel="icon" href="/subtitle-studio/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/subtitle-studio/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/subtitle-studio/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<style>
+.brand{display:flex;align-items:center;gap:16px;margin:0 0 8px}
+.brand img{width:72px;height:72px;border-radius:16px}
+.brand h1{margin:0}
+.cta{display:inline-block;margin:16px 0 0;padding:10px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.shot{margin:16px 0}
+.shot img{width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
+.shot figcaption{color:var(--muted);font-size:.9rem;margin-top:6px}
+ol.steps li{margin:6px 0}
+</style>
+</head>
 <body><main>
-<h1>videoEditingStudio</h1>
-<p class="muted">Shown inside the app in Korean as <strong>자막 스튜디오</strong> ("Subtitle Studio").</p>
-<nav><a href="https://github.com/rdf1111/videoEditingStudio/releases/latest">Download</a><a href="/subtitle-studio/privacy.html">Privacy Policy</a><a href="/subtitle-studio/terms.html">Terms of Use</a><a href="mailto:rdf1111@gmail.com">Contact</a></nav>
+<div class="brand"><img src="/subtitle-studio/img/app-icon.png" alt="videoEditingStudio app icon" width="72" height="72"><div><h1>videoEditingStudio</h1><p class="muted" style="margin:0">자막 스튜디오 · Free Windows app for short videos</p></div></div>
+<nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#platforms">Publishing</a><a href="#download">Download</a><a href="/subtitle-studio/privacy.html">Privacy Policy</a><a href="/subtitle-studio/terms.html">Terms of Use</a><a href="mailto:rdf1111@gmail.com">Contact</a></nav>
 
-<h2>What it is</h2>
-<p>videoEditingStudio is a desktop application for Windows. It turns your own video recordings into short vertical videos with subtitles, and can upload the finished video to your own YouTube channel, TikTok account or Instagram professional account without leaving the app.</p>
-<p>The app runs on your PC. Video, audio and screen content are processed locally; there is no videoEditingStudio server and no account to create with us.</p>
+<p>videoEditingStudio turns your own recordings into finished vertical short videos — subtitles, narration, music, titles and cuts — and publishes them to the YouTube channel, TikTok account or Instagram professional account you connect. Everything runs on your PC: there is no videoEditingStudio server and no account to create with us.</p>
+<a class="cta" href="https://github.com/rdf1111/videoEditingStudio/releases/latest">Download for Windows (free)</a>
 
-<h2>What it does</h2>
+<h2 id="features">Features</h2>
 <ul>
-<li><strong>Subtitles.</strong> Recognises speech in your video on your PC and lets you edit the resulting subtitles.</li>
+<li><strong>Subtitles.</strong> Recognises speech in your video on your PC and lets you edit every subtitle line and its timing.</li>
 <li><strong>Highlight shorts.</strong> Cuts a longer recording into short vertical clips with a title and captions.</li>
-<li><strong>Auto shorts.</strong> Builds a short from your clips with a script, narration, background music and a style template that you can then edit on a timeline.</li>
-<li><strong>Upload to YouTube.</strong> Sends a finished short to the YouTube channel you connected, with the title, description, tags, visibility, audience setting and optional schedule you entered, and shows the resulting video link and status.</li>
-<li><strong>Post to TikTok.</strong> Sends a finished short to the TikTok account you connected, with a caption built from your title, description and tags and the privacy level you chose, and shows the resulting status.</li>
+<li><strong>Auto shorts.</strong> Builds a short from your clips with a script, narration, background music and a style template, then lets you edit it on a timeline.</li>
+<li><strong>Product shorts.</strong> Write a short product introduction from product information and clips you choose: pick the exact ranges of each clip, review the scene order and script, add your own notes, then make the short.</li>
+<li><strong>Thumbnails.</strong> Design a cover image for each short.</li>
+<li><strong>Publishing and calendar.</strong> Publish a finished short to YouTube, TikTok or Instagram from inside the app, and see what you published on an upload calendar.</li>
 </ul>
 
-<h2>How it uses YouTube</h2>
-<p>The upload feature uses <a href="https://developers.google.com/youtube">YouTube API Services</a>. You sign in with Google in your own browser and choose what to allow. The app asks for two permissions only:</p>
-<table>
-<tr><th>Permission</th><th>Why the app needs it</th></tr>
-<tr><td><code>youtube.readonly</code></td><td>To show the name of the channel you connected and to check the processing and visibility status of videos you uploaded with the app.</td></tr>
-<tr><td><code>youtube.upload</code></td><td>To upload the video you selected to your channel when you press the publish button.</td></tr>
-</table>
-<p>The app uploads only when you press publish. It does not edit or delete existing videos, read comments, or act on any other part of your account. See the <a href="/subtitle-studio/privacy.html">Privacy Policy</a> for what is stored and how to disconnect.</p>
-<p>By using the YouTube features you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+<figure class="shot"><img src="/subtitle-studio/img/start.png" alt="Product shorts: choosing how to start a new short" loading="lazy"><figcaption>Product shorts — choose how to start, or continue a job you paused.</figcaption></figure>
+<figure class="shot"><img src="/subtitle-studio/img/settings.png" alt="Production settings with voice, length, music and notes" loading="lazy"><figcaption>Production settings — voice, length, music and your own notes before making the short.</figcaption></figure>
 
-<h2>How it uses Instagram</h2>
-<p>The Instagram feature uses the <a href="https://developers.facebook.com/docs/instagram-platform/content-publishing/">Instagram Graph API content publishing</a> with Facebook Login. You sign in with Facebook in your own browser and choose the Page and Instagram professional account to allow. The app uses the permissions <code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>pages_show_list</code>, <code>pages_read_engagement</code> and <code>business_management</code> only to find that account and to post the video you selected as a Reel when you press publish. It does not read your messages, comments, followers or insights. See the <a href="/subtitle-studio/privacy.html">Privacy Policy</a>.</p>
+<h2 id="how">How it works</h2>
+<ol class="steps">
+<li>Download the app and unzip it. No sign-up is needed.</li>
+<li>Add your own video files (or clips you are allowed to use) and choose a short type.</li>
+<li>Edit the subtitles, script, scenes, music and title in the editor.</li>
+<li>Export the finished short to your PC, or connect your own account and press <em>Publish</em>.</li>
+</ol>
+<p>Video, audio and screen content are processed on your PC. Text of a script you write may be sent to the speech service you choose when you create narration.</p>
 
-<h2>How it uses TikTok</h2>
-<p>The TikTok feature uses the <a href="https://developers.tiktok.com/doc/content-posting-api-get-started">TikTok Content Posting API</a> with TikTok Login Kit. You sign in with TikTok in your own browser and choose what to allow. The app asks for two permissions only: <code>user.info.basic</code> (to show the name of the account you connected) and <code>video.publish</code> (to post the video you selected when you press publish). It does not read or change anything else on your account. Until the app has passed the TikTok audit, TikTok keeps every video posted through it private. By using the TikTok features you agree to the <a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a>; TikTok's handling of your data is described in the <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.</p>
+<h2 id="platforms">Publishing to your accounts</h2>
+<h3>YouTube</h3>
+<p>Uses <a href="https://developers.google.com/youtube">YouTube API Services</a>. You sign in with Google in your own browser. The app asks for <code>youtube.readonly</code> (to show your channel name and check the status of videos you uploaded with the app) and <code>youtube.upload</code> (to upload the video you selected when you press publish). It does not edit or delete existing videos or read comments. By using the YouTube features you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; see also the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+<h3>TikTok</h3>
+<p>Uses the <a href="https://developers.tiktok.com/doc/content-posting-api-get-started">TikTok Content Posting API</a> with TikTok Login Kit. You sign in with TikTok in your own browser. The app asks for <code>user.info.basic</code> (to show the name of the account you connected) and <code>video.publish</code> (to post the video you selected, with the caption and privacy level you chose, when you press publish). It does not read or change anything else on your account. By using the TikTok features you agree to the <a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a>; see also the <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.</p>
+<h3>Instagram</h3>
+<p>Uses the <a href="https://developers.facebook.com/docs/instagram-platform/content-publishing/">Instagram API with Instagram Login</a>. You sign in with your Instagram professional account in your own browser. The app asks for <code>instagram_business_basic</code> (to show your account) and <code>instagram_business_content_publish</code> (to post the video you selected as a Reel when you press publish). It does not read your messages, comments, followers or insights. Instagram has no private posts through this API, so a posted Reel is public.</p>
+<p>See the <a href="/subtitle-studio/privacy.html">Privacy Policy</a> for what is stored on your PC and how to disconnect an account.</p>
 
-<h2>Download</h2>
-<p><strong>Free download for Windows 10/11 (64-bit):</strong> <a href="https://github.com/rdf1111/videoEditingStudio/releases/latest">videoEditingStudio releases</a> (zip, about 370 MB). Unzip and run <code>SubtitleStudio.exe</code>. No account or sign-up is needed. The current version is 2026.10.06. The first speech recognition downloads the Whisper model (about 1.5 GB) to your PC. The build is not code-signed yet, so Windows SmartScreen may ask you to confirm with "More info" and "Run anyway".</p>
-<p>Requirements: Windows 10 or 11, 64-bit, about 3 GB of free disk space. A YouTube channel or a TikTok account is needed only for the publishing features.</p>
+<h2 id="download">Download</h2>
+<p><strong>Free for Windows 10/11 (64-bit):</strong> <a href="https://github.com/rdf1111/videoEditingStudio/releases/latest">videoEditingStudio releases</a>. Unzip the archive and run <code>SubtitleStudio.exe</code>. The first speech recognition downloads a speech model to your PC. The build is not code-signed yet, so Windows SmartScreen may ask you to confirm with "More info" and "Run anyway".</p>
+<p>Requirements: Windows 10 or 11, 64-bit, about 3 GB of free disk space. A YouTube channel, TikTok account or Instagram professional account is needed only for publishing.</p>
 
 <h2>한국어 안내</h2>
-<p>videoEditingStudio(앱 안 이름: 자막 스튜디오)는 내 PC에서 영상에 자막을 넣고 쇼츠로 편집한 뒤, 내가 연결한 YouTube 채널이나 TikTok 계정에 바로 올리는 Windows 프로그램입니다. <a href="https://github.com/rdf1111/videoEditingStudio/releases/latest">내려받기(무료, Windows 10/11)</a>: 압축을 풀고 SubtitleStudio.exe를 실행하면 됩니다. 영상·음성은 PC 안에서 처리하며, 업로드는 게시 버튼을 눌렀을 때만 YouTube API 서비스 또는 TikTok Content Posting API를 통해 이루어집니다. YouTube 기능을 쓰면 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>에, TikTok 기능을 쓰면 <a href="https://www.tiktok.com/legal/terms-of-service">TikTok 서비스 약관</a>에 동의하는 것으로 봅니다. TikTok 앱 심사 전에는 TikTok이 올린 영상을 비공개로 둡니다.</p>
+<p>videoEditingStudio(앱 안 이름: 자막 스튜디오)는 내 PC에서 영상에 자막·내레이션·음악·제목을 넣어 세로 쇼츠로 만들고, 내가 연결한 YouTube 채널·TikTok 계정·Instagram 프로페셔널 계정에 바로 올리는 무료 Windows 프로그램입니다. <a href="https://github.com/rdf1111/videoEditingStudio/releases/latest">내려받기</a> 후 압축을 풀고 SubtitleStudio.exe를 실행하면 됩니다. 영상·음성은 PC 안에서 처리하며, 업로드는 게시 버튼을 눌렀을 때만 각 플랫폼의 공식 API로 이루어집니다.</p>
 
 <footer>videoEditingStudio · Contact: <a href="mailto:rdf1111@gmail.com">rdf1111@gmail.com</a> · <a href="/subtitle-studio/privacy.html">Privacy Policy</a> · <a href="/subtitle-studio/terms.html">Terms of Use</a></footer>
 </main></body></html>
